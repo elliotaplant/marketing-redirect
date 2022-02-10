@@ -23,7 +23,7 @@ Simply send the user to your marketing page with the value `disable-marketing-re
 
 # Example
 
-To see `marketing-redirect` in action, go to [the marketing page](https://elliotaplant.github.io/marketing-redirect), which is just the `index.html` file in this repo.
+To see `marketing-redirect` in action, go to [the marketing page](https://elliotaplant.github.io/marketing-redirect), which is just the `index.html` file in this repo. Click the "Always go to app" button to always be redirected to the app page, and click "Disable marketing redirect" to disable the automatic redirect.
 
 # Future plans and monetization
 
