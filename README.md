@@ -23,7 +23,11 @@ Simply send the user to your marketing page with the value `disable-marketing-re
 
 # Example
 
-To see `marketing-redirect` in action, go to [the marketing page](https://elliotaplant.github.io/marketing-redirect), which is just the `index.html` file in this repo. Click the "Always go to app" button to always be redirected to the app page, and click "Disable marketing redirect" to disable the automatic redirect.
+To see `marketing-redirect` in action, go to [the marketing page](https://elliotaplant.github.io/marketing-redirect), which is just the `index.html` file in this repo. Click the "Always go to app" button to always be redirected to the app page. Try going to the marketing page again, and see your browser get redirected to the app. When you're done, click "Disable marketing redirect" to disable the automatic redirect.
+
+# Couldn't you just do this with a redirect on your server?
+
+I expect that many companies don't have the same people in charge of the marketing page and a user level setting to control http codes.
 
 # Future plans and monetization
 
