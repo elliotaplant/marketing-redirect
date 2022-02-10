@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  // Replace YOUR_SITE_HERE with the url of your app, eg: https://app.yourdomain.com
+  var redirectSite = 'YOUR_SITE_HERE';
+
+  var marketingRedirectKey = 'marketing-redirect';
+
+  if (location.hash.includes('disable-marketing-redirect')) {
+    localStorage.removeItem(marketingRedirectKey);
+  } else if (localStorage.getItem(marketingRedirectKey)) {
+    location = redirectSite;
+  }
+
+  var redirectButton = document.getElementById('marketing-redirect');
+
+  if (redirectButton) {
+    redirectButton.onclick = function() {
+      localStorage.setItem(marketingRedirectKey, true);
+      location = redirectSite;
+    }
+  }
+</script>

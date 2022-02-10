@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <title>Marketing Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Example marketing page</h1>
+      <p>Cool product features!</p>
+    </header>
+    <main>
+      <section>
+        <button id="marketing-redirect">Always go to app</button>
+      </section>
+    </main>
+  </body>
+
+  <script type="text/javascript">
+    var redirectSite = 'https://elliotaplant.github.io/marketing-redirect/app.html';
+
+    var marketingRedirectKey = 'marketing-redirect';
+
+    if (location.hash.includes('disable-marketing-redirect')) {
+      localStorage.removeItem(marketingRedirectKey);
+    } else if (localStorage.getItem(marketingRedirectKey)) {
+      location = redirectSite;
+    }
+
+    var redirectButton = document.getElementById('marketing-redirect');
+
+    if (redirectButton) {
+      redirectButton.onclick = function() {
+        localStorage.setItem(marketingRedirectKey, true);
+        location = redirectSite;
+      }
+    }
+  </script>
+
+</html>
